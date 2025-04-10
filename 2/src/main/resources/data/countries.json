@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "name": "Country1",
+    "authorId": "1"
+  },
+  {
+    "id": 2,
+    "name": "Country2",
+    "authorId": "2"
+  }
+]

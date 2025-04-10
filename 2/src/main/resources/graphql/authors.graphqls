@@ -1,0 +1,22 @@
+type Author {
+    id: ID
+    name: String
+    country: Country
+    countryDataLoader: Country
+    books: [Book]
+}
+
+type Book {
+    id: ID
+    title: String
+}
+
+type Country {
+    id: ID
+    name: String
+}
+
+type Query {
+    authors: [Author]
+    authorById(id: ID): Author
+}

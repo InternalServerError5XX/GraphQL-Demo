@@ -1,0 +1,17 @@
+type Query {
+    ticker(symbol: String): Ticker
+}
+
+type Mutation {
+    pushTicker(symbol: String, price: Float, size: Int): Ticker
+}
+
+type Subscription {
+    tickerChanged(symbol: String): Ticker
+}
+
+type Ticker {
+    symbol: String
+    price: Float
+    size: Float
+}

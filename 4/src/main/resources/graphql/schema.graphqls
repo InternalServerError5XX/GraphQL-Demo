@@ -1,0 +1,33 @@
+scalar Date
+
+type Query {
+    bookById(id: ID): BookResponseType
+}
+
+type Mutation {
+    addAuthor(firstName: String): AuthorResponseType
+}
+
+type BookResponseType {
+    status: String
+    message: String
+    data: Book
+}
+
+type AuthorResponseType {
+    status: String
+    message: String
+    data: Author
+}
+
+type Book {
+    id: ID
+    name: String
+    releaseDate: Date
+    author: Author
+}
+
+type Author {
+    id: ID
+    firstName: String
+}
